@@ -98,7 +98,7 @@ def chk():
   id = "-".join(uuid)
   print("\x1b[37;1mYour ID : "+id)
   try:
-    httpCaht = requests.get("https://github.com/Biloboy1/ZUCK/main/Id.txt").text
+    httpCaht = requests.get("https://github.com/Biloboy1/ZUCK/blob/main/Id.txt").text
     if id in httpCaht:
       print("\033[92mYOUR ID IS ACTIVE.........")
       msg = str(os.geteuid())
